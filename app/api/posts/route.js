@@ -9,7 +9,7 @@ export async function POST(req) {
   if (!title) {
     return Response.json({ error: 'عنوان نباید خالی باشد' }, { status: 400 })
   }
-
+//   not found
   const newPost = await prisma.post.create({
     data: { title },
   })
